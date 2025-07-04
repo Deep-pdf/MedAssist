@@ -18,9 +18,9 @@
             <div class="medtitle">MedAssist</div>
 
             <div class="navbar" id="navbar">
-                <a href="#main1" class="nav1">Section 1</a>
-                <a href="#section2" class="nav2">Section 2</a>
-                <a href="#section3" class="nav3">Section 3</a>
+                <a href="#main1" class="nav1">Home</a>
+                <a href="#main2" class="nav2">Services</a>
+                <a href="#main3" class="nav3">Med AI</a>
                 <a href="#section4" class="nav4">Section 4</a>
                 <a href="#section5" class="nav5">Section 5</a>
                 <a href="#section6" class="nav6">Section 6</a>
@@ -35,21 +35,57 @@
                 </div>
             </div>
 
-            <button class="Nbutton left" onclick="prevImage()"><-</button>
+            <button class="Nbutton left" onclick="prevImage()"><-< /button>
                     <button class="Nbutton right" onclick="nextImage()">-></button>
         </div>
 
     </div>
 
-    <div class="main2">
+    <div class="main2" id="main2">
         <div class="services-text">
-            <div class="line1">Services we provide</div>
+            <div class="line11">Services we provide</div>
         </div>
         <div class="box-container">
-            <img class="box" src="Assets/box.svg" alt="">
-            <img class="box" src="Assets/box.svg" alt="">
-            <img class="box" src="Assets/box.svg" alt="">
+            <div class="box1 boxx">
+                <div class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse explicabo est
+                    provident in nam impedit a nemo? Numquam, nisi quae?</div>
+                <img src="Assets/hospital.png" style="height: 45%;" alt="" class="icon">
+                <img class="box" src="Assets/box.svg" alt="">
+            </div>
+            <div class="box2 boxx">
+                <div class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse explicabo est
+                    provident in nam impedit a nemo? Numquam, nisi quae?</div>
+                <img src="Assets/doc.png" style="height: 45%;" alt="" class="icon">
+                <img class="box" src="Assets/box.svg" alt="">
+            </div>
+            <div class="box3 boxx">
+                <div class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse explicabo est
+                    provident in nam impedit a nemo? Numquam, nisi quae?</div>
+                <img src="Assets/hearttt.png" style="height: 40%;" alt="" class="icon">
+                <img class="box" src="Assets/box.svg" alt="">
+            </div>
         </div>
+    </div>
+
+    <div class="main3" id="main3">
+
+        <div class="ai-container">
+            <h1 class="ai-title">How can I help you</h1>
+            <label for="input-title">Ask Med AI</label>
+            <div class="bar">
+                <textarea id="input" placeholder="type Your problem here" rows="1"></textarea>
+
+                <button id="send-button">Send</button>
+            </div>
+
+            <!-- <h2>Generated Content:</h2> -->
+            <div id="output">
+                Your generated content will appear here.
+            </div>
+
+
+        </div>
+
     </div>
 
     <script src="script.js"></script>
